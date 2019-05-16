@@ -90,6 +90,15 @@ namespace startrek {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _03___Jerry_Goldsmith___Klingon_Battle_1_ {
+            get {
+                return ResourceManager.GetStream("_03___Jerry_Goldsmith___Klingon_Battle_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream _072 {
             get {
                 return ResourceManager.GetStream("_072", resourceCulture);
@@ -163,6 +172,15 @@ namespace startrek {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream KlingonAlert {
+            get {
+                return ResourceManager.GetStream("KlingonAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] PreyEx2 {
@@ -213,9 +231,38 @@ namespace startrek {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Star_Trek_Red_Alert_Screen {
+            get {
+                return ResourceManager.GetStream("Star_Trek_Red_Alert_Screen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Star_Trek_sou {
             get {
                 return ResourceManager.GetStream("Star_Trek_sou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap USS_Enterprise_D_2C {
+            get {
+                object obj = ResourceManager.GetObject("USS_Enterprise_D_2C", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap USS_Enterprise_D_2C_These_Are_the_Voyages {
+            get {
+                object obj = ResourceManager.GetObject("USS_Enterprise_D_2C_These_Are_the_Voyages", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

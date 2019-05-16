@@ -163,5 +163,20 @@
   <ItemGroup>
     <None Include="Resources\PreyEx2.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USS_Enterprise-D%252C_These_Are_the_Voyages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USS_Enterprise-D%252C.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star Trek Red Alert Screen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.- Jerry Goldsmith - Klingon Battle%281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KlingonAlert.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -61,7 +61,7 @@ namespace startrek
         {
             Button fakeLcars = (Button)sender;
             ShieldsUp(fakeLcars.Name);
-            txtInfo.Visible = Fx.Istxtinfo;
+            //  txtInfo.Visible = Fx.Istxtinfo;// // this links the variable "Istxtinfo" to the text box "txtInfo" and allows one to influence the other. 
 
 
 
@@ -156,15 +156,34 @@ namespace startrek
                         //axWindowsMediaPlayer1.(Resource1.PreyEx2);
                         //SoundPlayer sn2Player = new SoundPlayer(Resource1._330);
                         //sn2Player.Play();
-                        myLogic.Sdeflect();
+
                         // Fx.SoundT7();
                         myLogic.ShieldsUp = "Shields";
                         break;
-                    case "":
-                        Fx.SoundT1();
+                    case "btnEngage":
+                        myLogic.Sdeflect(); // this is the Random number generator
+                        btnEngage.Visible = false;
+                        Fx.SoundT7();
+
+
+
+
+                        Fx.SoundT10();
+                        txtInfo.Visible = true;
+                        // Thread.Sleep(3000);
+                        // Fx.SoundT1();
                         myLogic.ShieldsUp = "";
                         break;
 
+                    case "bntAlert":
+                        bntAlert.Visible = false;
+                        Fx.SoundT8();
+
+                        btnEngage.Visible = true;
+                        Thread.Sleep(10000);
+                        Thread.Sleep(0);
+
+                        break;
                 }
 
                 Text = myLogic.ShieldsUp;
@@ -177,12 +196,16 @@ namespace startrek
         {               //---------//
                         // Keep this code
 
-            bntAlert.Visible = false;
-            Fx.SoundT8();
+            //bntAlert.Visible = false;
+            //Fx.SoundT8();
 
-            btnEngage.Visible = true;
-            Thread.Sleep(5000);
-            // btnEngage.Visible = false;
+            //btnEngage.Visible = true;
+            //Thread.Sleep(10000);
+            //Thread.Sleep(0);
+
+
+
+
 
             // txtInfo.Visible = true;
             //Thread.Sleep(5000);

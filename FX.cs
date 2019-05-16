@@ -12,7 +12,7 @@ namespace startrek
         // public  static bool istxtinfo = true;
         // Istxtinfo is a Bool to control a txt box, but can also be used to control other winform properties.
         //
-        public static bool Istxtinfo { get; set; } = false;
+        public static bool Istxtinfo { get; set; } = false; // this is the variable that allows 2 way communication from FX Class and Form1 .
         public static void SoundT1()
         {
             SoundPlayer snPlayer = new SoundPlayer(Resource1._002
@@ -59,7 +59,7 @@ namespace startrek
         }
         public static void SoundT7()
         {
-            SoundPlayer sn2Player = new SoundPlayer(Resource1.Red_Alert);
+            SoundPlayer sn2Player = new SoundPlayer(Resource1.Star_Trek_Red_Alert_Screen);
             sn2Player.Play();
 
 
@@ -79,5 +79,16 @@ namespace startrek
 
 
         }
+
+        public static void SoundT10()
+        {
+            SoundPlayer sn2Player = new SoundPlayer(Resource1.KlingonAlert);
+            sn2Player.PlayLooping();
+
+
+        }
+
+
+
     }
 }

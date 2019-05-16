@@ -56,7 +56,7 @@ namespace startrek
 
             {
                 Fx.SoundT9();
-                Fx.Istxtinfo = true;
+                Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
 
 
 

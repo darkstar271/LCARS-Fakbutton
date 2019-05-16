@@ -169,4 +169,19 @@
   <data name="PreyEx21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\PreyEx2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="KlingonAlert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KlingonAlert.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Star_Trek_Red_Alert_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Star Trek Red Alert Screen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USS_Enterprise_D_2C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\USS_Enterprise-D%2C.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USS_Enterprise_D_2C_These_Are_the_Voyages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\USS_Enterprise-D%2C_These_Are_the_Voyages.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_03___Jerry_Goldsmith___Klingon_Battle_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03.- Jerry Goldsmith - Klingon Battle(1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

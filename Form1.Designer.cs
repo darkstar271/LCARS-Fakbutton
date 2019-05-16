@@ -40,6 +40,7 @@
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnEngage = new System.Windows.Forms.Button();
             this.txtInfo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,43 +176,61 @@
             this.bntAlert.Size = new System.Drawing.Size(741, 499);
             this.bntAlert.TabIndex = 7;
             this.bntAlert.UseVisualStyleBackColor = true;
-            this.bntAlert.Click += new System.EventHandler(this.BntAlert_Click);
+            this.bntAlert.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(683, 94);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(21, 495);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(185, 189);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(70, 58);
             this.axWindowsMediaPlayer1.TabIndex = 8;
             this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.AxWindowsMediaPlayer1_Enter);
             // 
             // btnEngage
             // 
-            this.btnEngage.BackgroundImage = global::startrek.Resource1.Enterprise1;
+            this.btnEngage.BackgroundImage = global::startrek.Resource1.USS_Enterprise_D_2C;
             this.btnEngage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEngage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEngage.FlatAppearance.BorderSize = 0;
             this.btnEngage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEngage.Location = new System.Drawing.Point(490, 300);
+            this.btnEngage.Location = new System.Drawing.Point(324, 95);
             this.btnEngage.Name = "btnEngage";
-            this.btnEngage.Size = new System.Drawing.Size(397, 168);
+            this.btnEngage.Size = new System.Drawing.Size(537, 330);
             this.btnEngage.TabIndex = 9;
             this.btnEngage.UseVisualStyleBackColor = true;
             this.btnEngage.Visible = false;
+            this.btnEngage.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // txtInfo
             // 
             this.txtInfo.BackColor = System.Drawing.Color.Black;
             this.txtInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInfo.ForeColor = System.Drawing.Color.Gold;
-            this.txtInfo.Location = new System.Drawing.Point(322, 149);
+            this.txtInfo.Location = new System.Drawing.Point(353, 132);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(211, 134);
+            this.txtInfo.Size = new System.Drawing.Size(490, 316);
             this.txtInfo.TabIndex = 10;
             this.txtInfo.Text = resources.GetString("txtInfo.Text");
+            this.txtInfo.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(102)))), ((int)(((byte)(153)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(95, 550);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.button1.Size = new System.Drawing.Size(148, 51);
+            this.button1.TabIndex = 11;
+            this.button1.Tag = "";
+            this.button1.Text = "Engage";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -220,6 +239,7 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.btnEngage);
             this.Controls.Add(this.axWindowsMediaPlayer1);
@@ -253,6 +273,7 @@
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Button btnEngage;
         private System.Windows.Forms.TextBox txtInfo;
+        private System.Windows.Forms.Button button1;
     }
 }
 
