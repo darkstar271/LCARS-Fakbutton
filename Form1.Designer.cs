@@ -40,7 +40,7 @@
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnEngage = new System.Windows.Forms.Button();
             this.txtInfo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,7 +195,7 @@
             this.btnEngage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEngage.FlatAppearance.BorderSize = 0;
             this.btnEngage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEngage.Location = new System.Drawing.Point(324, 95);
+            this.btnEngage.Location = new System.Drawing.Point(286, 111);
             this.btnEngage.Name = "btnEngage";
             this.btnEngage.Size = new System.Drawing.Size(537, 330);
             this.btnEngage.TabIndex = 9;
@@ -208,29 +208,33 @@
             this.txtInfo.BackColor = System.Drawing.Color.Black;
             this.txtInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInfo.ForeColor = System.Drawing.Color.Gold;
-            this.txtInfo.Location = new System.Drawing.Point(353, 132);
+            this.txtInfo.Location = new System.Drawing.Point(34, 511);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(490, 316);
+            this.txtInfo.Size = new System.Drawing.Size(109, 90);
             this.txtInfo.TabIndex = 10;
             this.txtInfo.Text = resources.GetString("txtInfo.Text");
             this.txtInfo.Visible = false;
             // 
-            // button1
+            // btnInfo
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(102)))), ((int)(((byte)(153)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(95, 550);
-            this.button1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.button1.Size = new System.Drawing.Size(148, 51);
-            this.button1.TabIndex = 11;
-            this.button1.Tag = "";
-            this.button1.Text = "Engage";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnInfo.BackColor = System.Drawing.Color.Black;
+            this.btnInfo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.ForeColor = System.Drawing.Color.Gold;
+            this.btnInfo.Location = new System.Drawing.Point(224, 79);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.btnInfo.Size = new System.Drawing.Size(627, 432);
+            this.btnInfo.TabIndex = 11;
+            this.btnInfo.Tag = "";
+            this.btnInfo.Text = resources.GetString("btnInfo.Text");
+            this.btnInfo.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnInfo.UseVisualStyleBackColor = false;
+            this.btnInfo.Visible = false;
+            this.btnInfo.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // Form1
             // 
@@ -239,7 +243,7 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.btnEngage);
             this.Controls.Add(this.axWindowsMediaPlayer1);
@@ -273,7 +277,7 @@
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Button btnEngage;
         private System.Windows.Forms.TextBox txtInfo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInfo;
     }
 }
 

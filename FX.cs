@@ -13,6 +13,9 @@ namespace startrek
         // Istxtinfo is a Bool to control a txt box, but can also be used to control other winform properties.
         //
         public static bool Istxtinfo { get; set; } = false; // this is the variable that allows 2 way communication from FX Class and Form1 .
+        public static bool ShieldAct { get; set; } = false; // This is part of the Boolen for checking if the ShieldUp has been used
+
+
         public static void SoundT1()
         {
             SoundPlayer snPlayer = new SoundPlayer(Resource1._002

@@ -129,8 +129,18 @@
 </value>
   </data>
   <data name="txtInfo.Text" xml:space="preserve">
-    <value>The Klingons have ambushed us , we have limited power and only 6 photons torpeadeos, we must reinforce the shields when we fire or the blast will desus, disdro there clocked ship.
-only twice, if we fire the torpeadeo and miss we will not be affected but if we ,  the blast
+    <value>The Klingons have ambushed us, after escaping from their fleet, we still have one cloaked bird of prey following us, and with limited power we can only fire one torpedo at a time, having 6 remaining. If we fire and hit the Klingon ship we also will be destroyed, but our reserve power allows us to reinforce the shields only twice.
+Remember you must reinforce the shields before you fire or we also will be destroyed.
+Good luck
+
+Arm Torpedoes 
 </value>
+  </data>
+  <data name="btnInfo.Text" xml:space="preserve">
+    <value>The Klingons have ambushed us, after escaping from their fleet, we still have one cloaked bird of prey following us, and with limited power we can only fire one torpedo at a time, having 6 remaining. If we fire and hit the Klingon ship we also will be destroyed, but our reserve power allows us to reinforce the shields only twice.
+Remember you must reinforce the shields before you fire or we also will be destroyed.
+Good luck
+
+Arm Torpedoes </value>
   </data>
 </root>

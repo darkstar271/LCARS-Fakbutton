@@ -49,8 +49,24 @@ namespace startrek
 
         }
 
+        public void Winshield()
+
+        {
+            if (Fx.ShieldAct == true)
+            {
+                Fx.SoundT2();
+            }
+
+        }
         public void WinLose()
         {
+
+            if ((Fx.ShieldAct == true) && (butnum == Rndnum))
+            {
+
+            }
+
+
             if (butnum == Rndnum)
 
 

@@ -133,7 +133,7 @@ namespace startrek
                         myLogic.WinLose();
                         //txtInfo.Visible = Fx.Istxtinfo;
                         // Fx.SoundT5();
-                        myLogic.ShieldsUp = "Top";
+                        //  myLogic.ShieldsUp = "Top";
                         break;
                     case "btnBottom":
                         myLogic.butnum = 6;
@@ -141,25 +141,28 @@ namespace startrek
                         myLogic.WinLose();
                         //txtInfo.Visible = Fx.Istxtinfo;
                         // Fx.SoundT6();
-                        myLogic.ShieldsUp = "Bottom";
+                        //  myLogic.ShieldsUp = "Bottom";
                         break;
                     case "btnShields":
 
-                        //axWindowsMediaPlayer1.URL = @"G:\Visual Studio 2019 Files\startrek\Resources\PreyEx2.avi";
-
-                        //axWindowsMediaPlayer1.URL = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath),
-                        //    "PreyEx2.avi");
-
-                        // axWindowsMediaPlayer1.URL = "Resources\\PreyEx2.avi";
-                        // axWindowsMediaPlayer1.Ctlcontrols.play();
-
-                        //axWindowsMediaPlayer1.(Resource1.PreyEx2);
-                        //SoundPlayer sn2Player = new SoundPlayer(Resource1._330);
-                        //sn2Player.Play();
-
-                        // Fx.SoundT7();
-                        myLogic.ShieldsUp = "Shields";
+                        Fx.ShieldAct = true;
+                        myLogic.Winshield();
+                        // myLogic.ShieldsUp = "Shields";
                         break;
+                    //axWindowsMediaPlayer1.URL = @"G:\Visual Studio 2019 Files\startrek\Resources\PreyEx2.avi";
+
+                    //axWindowsMediaPlayer1.URL = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath),
+                    //    "PreyEx2.avi");
+
+                    // axWindowsMediaPlayer1.URL = "Resources\\PreyEx2.avi";
+                    // axWindowsMediaPlayer1.Ctlcontrols.play();
+
+                    //axWindowsMediaPlayer1.(Resource1.PreyEx2);
+                    //SoundPlayer sn2Player = new SoundPlayer(Resource1._330);
+                    //sn2Player.Play();
+
+                    // Fx.SoundT7();
+
                     case "btnEngage":
                         myLogic.Sdeflect(); // this is the Random number generator
                         btnEngage.Visible = false;
@@ -169,7 +172,8 @@ namespace startrek
 
 
                         Fx.SoundT10();
-                        txtInfo.Visible = true;
+                        btnInfo.Visible = true;
+                        //txtInfo.Visible = true;
                         // Thread.Sleep(3000);
                         // Fx.SoundT1();
                         myLogic.ShieldsUp = "";
@@ -184,6 +188,13 @@ namespace startrek
                         Thread.Sleep(0);
 
                         break;
+
+                    case "btnInfo":
+
+                        Fx.SoundT3();
+
+                        break;
+
                 }
 
                 Text = myLogic.ShieldsUp;
