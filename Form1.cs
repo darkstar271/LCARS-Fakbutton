@@ -164,7 +164,7 @@ namespace startrek
                     // Fx.SoundT7();
 
                     case "btnEngage":
-                        myLogic.Sdeflect(); // this is the Random number generator
+
                         btnEngage.Visible = false;
                         Fx.SoundT7();
 
@@ -191,8 +191,13 @@ namespace startrek
 
                     case "btnInfo":
 
-                        Fx.SoundT3();
-
+                        // Fx.SoundT3();
+                        myLogic.Sdeflect(); // this is the Random number generator
+                        btnInfo.Visible = false;
+                        picMain.Visible = true;
+                        picMain.Image = Resource1.BOPEX; // this changes the PicMain picture to BOPEX
+                        picMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
+                        // send to Winlose  method 
                         break;
 
                 }

@@ -41,7 +41,9 @@
             this.btnEngage = new System.Windows.Forms.Button();
             this.txtInfo = new System.Windows.Forms.TextBox();
             this.btnInfo = new System.Windows.Forms.Button();
+            this.picMain = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBow
@@ -223,7 +225,7 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.Gold;
-            this.btnInfo.Location = new System.Drawing.Point(224, 79);
+            this.btnInfo.Location = new System.Drawing.Point(168, 82);
             this.btnInfo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
@@ -236,6 +238,18 @@
             this.btnInfo.Visible = false;
             this.btnInfo.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
+            // picMain
+            // 
+            this.picMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picMain.Image = global::startrek.Resource1.BOP;
+            this.picMain.Location = new System.Drawing.Point(179, 54);
+            this.picMain.Name = "picMain";
+            this.picMain.Size = new System.Drawing.Size(788, 499);
+            this.picMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMain.TabIndex = 12;
+            this.picMain.TabStop = false;
+            this.picMain.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +257,7 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.picMain);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.btnEngage);
@@ -259,6 +274,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,6 +294,7 @@
         private System.Windows.Forms.Button btnEngage;
         private System.Windows.Forms.TextBox txtInfo;
         private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.PictureBox picMain;
     }
 }
 

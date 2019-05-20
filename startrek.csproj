@@ -178,5 +178,11 @@
   <ItemGroup>
     <None Include="Resources\KlingonAlert.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOPEX.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

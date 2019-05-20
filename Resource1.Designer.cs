@@ -144,6 +144,26 @@ namespace startrek {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BOP {
+            get {
+                object obj = ResourceManager.GetObject("BOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BOPEX {
+            get {
+                object obj = ResourceManager.GetObject("BOPEX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dsBuffer_bmp {
             get {
                 object obj = ResourceManager.GetObject("dsBuffer_bmp", resourceCulture);
