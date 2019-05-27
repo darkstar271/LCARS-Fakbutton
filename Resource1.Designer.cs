@@ -135,6 +135,15 @@ namespace startrek {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _101 {
+            get {
+                return ResourceManager.GetStream("_101", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream _330 {
             get {
                 return ResourceManager.GetStream("_330", resourceCulture);

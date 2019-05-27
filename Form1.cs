@@ -59,6 +59,15 @@ namespace startrek
 
         private void BtnEnter_Click(object sender, EventArgs e)
         {
+
+            // count down the shiledboost. If shieldboost is less than 0 you die
+
+            
+            //1 set the shield to true
+            //chekc if the rnd == number clicked
+
+            //if yes WIN!
+
             Button fakeLcars = (Button)sender;
             ShieldsUp(fakeLcars.Name);
             //  txtInfo.Visible = Fx.Istxtinfo;// // this links the variable "Istxtinfo" to the text box "txtInfo" and allows one to influence the other. 
@@ -195,8 +204,10 @@ namespace startrek
                         myLogic.Sdeflect(); // this is the Random number generator
                         btnInfo.Visible = false;
                         picMain.Visible = true;
-                        picMain.Image = Resource1.BOPEX; // this changes the PicMain picture to BOPEX
-                        picMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
+                        //Thread.Sleep(10000);
+                        //Thread.Sleep(0);
+                        //picMain.Image = Resource1.BOPEX; // this changes the PicMain picture to BOPEX
+                        //picMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
                         // send to Winlose  method 
                         break;
 

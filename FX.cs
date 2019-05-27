@@ -90,7 +90,13 @@ namespace startrek
 
 
         }
+        public static void SoundT11()
+        {
+            SoundPlayer sn2Player = new SoundPlayer(Resource1._101);
+            sn2Player.PlayLooping();
 
+
+        }
 
 
     }

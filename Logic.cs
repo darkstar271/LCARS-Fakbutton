@@ -63,20 +63,31 @@ namespace startrek
 
             if ((Fx.ShieldAct == true) && (butnum == Rndnum))
             {
+                //You have won
+                // winning method  here
+                Fx.SoundT11();
+                return;
+
 
             }
 
 
             if (butnum == Rndnum)
 
-
+            // you lose method here
             {
                 Fx.SoundT9();
                 Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
 
 
-
+                return;
             }
+
+            // method here keep firing
+
+            //message you missed fire again
+
+
 
             //// lose if statement
             //if (Sboost == 0 && fire > 0)

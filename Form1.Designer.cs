@@ -173,7 +173,7 @@
             this.bntAlert.BackgroundImage = global::startrek.Resource1.fed;
             this.bntAlert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bntAlert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntAlert.Location = new System.Drawing.Point(168, 54);
+            this.bntAlert.Location = new System.Drawing.Point(179, 54);
             this.bntAlert.Name = "bntAlert";
             this.bntAlert.Size = new System.Drawing.Size(741, 499);
             this.bntAlert.TabIndex = 7;
@@ -197,9 +197,9 @@
             this.btnEngage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEngage.FlatAppearance.BorderSize = 0;
             this.btnEngage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEngage.Location = new System.Drawing.Point(286, 111);
+            this.btnEngage.Location = new System.Drawing.Point(179, 54);
             this.btnEngage.Name = "btnEngage";
-            this.btnEngage.Size = new System.Drawing.Size(537, 330);
+            this.btnEngage.Size = new System.Drawing.Size(719, 484);
             this.btnEngage.TabIndex = 9;
             this.btnEngage.UseVisualStyleBackColor = true;
             this.btnEngage.Visible = false;
@@ -225,11 +225,11 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.Gold;
-            this.btnInfo.Location = new System.Drawing.Point(168, 82);
+            this.btnInfo.Location = new System.Drawing.Point(179, 54);
             this.btnInfo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.btnInfo.Size = new System.Drawing.Size(627, 432);
+            this.btnInfo.Size = new System.Drawing.Size(741, 499);
             this.btnInfo.TabIndex = 11;
             this.btnInfo.Tag = "";
             this.btnInfo.Text = resources.GetString("btnInfo.Text");
