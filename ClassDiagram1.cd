@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="startrek.Logic">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="1" Y="1.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>iAAQAAQAEAAAAAAAAAAAAAgAAAAAAAAABoBBAAQAAhA=</HashCode>
       <FileName>Logic.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="startrek.Fx">
-    <Position X="5" Y="1.25" Width="1.5" />
+    <Position X="3.75" Y="1.25" Width="6" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAADCgD8AAAAAEAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>FX.cs</FileName>

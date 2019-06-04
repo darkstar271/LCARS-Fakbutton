@@ -42,6 +42,7 @@
             this.txtInfo = new System.Windows.Forms.TextBox();
             this.btnInfo = new System.Windows.Forms.Button();
             this.picMain = new System.Windows.Forms.PictureBox();
+            this.btnFireAgain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
@@ -197,7 +198,7 @@
             this.btnEngage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEngage.FlatAppearance.BorderSize = 0;
             this.btnEngage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEngage.Location = new System.Drawing.Point(179, 54);
+            this.btnEngage.Location = new System.Drawing.Point(201, 50);
             this.btnEngage.Name = "btnEngage";
             this.btnEngage.Size = new System.Drawing.Size(719, 484);
             this.btnEngage.TabIndex = 9;
@@ -225,7 +226,7 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.Gold;
-            this.btnInfo.Location = new System.Drawing.Point(179, 54);
+            this.btnInfo.Location = new System.Drawing.Point(179, 59);
             this.btnInfo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
@@ -242,13 +243,30 @@
             // 
             this.picMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picMain.Image = global::startrek.Resource1.BOP;
-            this.picMain.Location = new System.Drawing.Point(179, 54);
+            this.picMain.Location = new System.Drawing.Point(179, 43);
             this.picMain.Name = "picMain";
             this.picMain.Size = new System.Drawing.Size(788, 499);
             this.picMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picMain.TabIndex = 12;
             this.picMain.TabStop = false;
             this.picMain.Visible = false;
+            // 
+            // btnFireAgain
+            // 
+            this.btnFireAgain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnFireAgain.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnFireAgain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnFireAgain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnFireAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFireAgain.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFireAgain.Location = new System.Drawing.Point(354, 4);
+            this.btnFireAgain.Name = "btnFireAgain";
+            this.btnFireAgain.Size = new System.Drawing.Size(209, 33);
+            this.btnFireAgain.TabIndex = 13;
+            this.btnFireAgain.Text = "Fire Again";
+            this.btnFireAgain.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnFireAgain.UseVisualStyleBackColor = false;
+            this.btnFireAgain.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // Form1
             // 
@@ -257,6 +275,7 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.btnFireAgain);
             this.Controls.Add(this.picMain);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.txtInfo);
@@ -295,6 +314,7 @@
         private System.Windows.Forms.TextBox txtInfo;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.PictureBox picMain;
+        private System.Windows.Forms.Button btnFireAgain;
     }
 }
 

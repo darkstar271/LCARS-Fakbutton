@@ -62,7 +62,7 @@ namespace startrek
 
             // count down the shiledboost. If shieldboost is less than 0 you die
 
-            
+
             //1 set the shield to true
             //chekc if the rnd == number clicked
 
@@ -211,6 +211,12 @@ namespace startrek
                         // send to Winlose  method 
                         break;
 
+                    case "btnFireAgain":
+
+                        //Fx.ShieldAct = true;
+                        //myLogic.Winshield();
+                        // myLogic.ShieldsUp = "Shields";
+                        break;
                 }
 
                 Text = myLogic.ShieldsUp;
