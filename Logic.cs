@@ -83,6 +83,13 @@ namespace startrek
                 return;
             }
 
+            if (butnum != Rndnum)
+            {
+
+                // make refire method
+
+
+            }
             // method here keep firing
 
             //message you missed fire again
