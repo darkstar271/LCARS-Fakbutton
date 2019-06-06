@@ -4,13 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Media;
+using System.Windows.Forms;
 
 namespace startrek
 {
     public class Logic
+
+
     {// make 10 Properties to store variables
      //  public bool istxtinfo
 
+        // Form1 myForm1 = new Form1();
+        public PictureBox PicMain { get; set; }
         public int butnum { get; set; }
         public string ShieldsUp { get; set; }
         public int randomTwarp { get; set; }
@@ -29,9 +34,16 @@ namespace startrek
             Random random = new Random();
             Rndnum = random.Next(1, 7);
             return Rndnum;
+
         }
 
+        public void ImageCh()
+        {
+            PicMain.Image = Resource1.entex; // this changes the PicMain picture to BOPEX
+            PicMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
 
+
+        }
 
 
 
@@ -54,7 +66,7 @@ namespace startrek
         {
             if (Fx.ShieldAct == true)
             {
-                Fx.SoundT2();
+                Fx.SoundT2(); // update complete 
             }
 
         }
@@ -77,6 +89,7 @@ namespace startrek
             // you lose method here
             {
                 Fx.SoundT9();
+                ImageCh();
                 Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
 
 
@@ -85,7 +98,7 @@ namespace startrek
 
             if (butnum != Rndnum)
             {
-
+                Fx.IsbtnFireAgain = true;
                 // make refire method
 
 

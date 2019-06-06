@@ -43,6 +43,9 @@
             this.btnInfo = new System.Windows.Forms.Button();
             this.picMain = new System.Windows.Forms.PictureBox();
             this.btnFireAgain = new System.Windows.Forms.Button();
+            this.txtKlingons = new System.Windows.Forms.TextBox();
+            this.txtEnterprise = new System.Windows.Forms.TextBox();
+            this.btnReplay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
@@ -189,6 +192,7 @@
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(70, 58);
             this.axWindowsMediaPlayer1.TabIndex = 8;
+            this.axWindowsMediaPlayer1.Visible = false;
             this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.AxWindowsMediaPlayer1_Enter);
             // 
             // btnEngage
@@ -198,7 +202,7 @@
             this.btnEngage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEngage.FlatAppearance.BorderSize = 0;
             this.btnEngage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEngage.Location = new System.Drawing.Point(201, 50);
+            this.btnEngage.Location = new System.Drawing.Point(179, 61);
             this.btnEngage.Name = "btnEngage";
             this.btnEngage.Size = new System.Drawing.Size(719, 484);
             this.btnEngage.TabIndex = 9;
@@ -226,7 +230,7 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.Gold;
-            this.btnInfo.Location = new System.Drawing.Point(179, 59);
+            this.btnInfo.Location = new System.Drawing.Point(179, 54);
             this.btnInfo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
@@ -243,7 +247,7 @@
             // 
             this.picMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picMain.Image = global::startrek.Resource1.BOP;
-            this.picMain.Location = new System.Drawing.Point(179, 43);
+            this.picMain.Location = new System.Drawing.Point(179, 54);
             this.picMain.Name = "picMain";
             this.picMain.Size = new System.Drawing.Size(788, 499);
             this.picMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -255,18 +259,58 @@
             // 
             this.btnFireAgain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.btnFireAgain.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnFireAgain.FlatAppearance.BorderSize = 0;
             this.btnFireAgain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.btnFireAgain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.btnFireAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFireAgain.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFireAgain.Location = new System.Drawing.Point(354, 4);
+            this.btnFireAgain.Margin = new System.Windows.Forms.Padding(0);
             this.btnFireAgain.Name = "btnFireAgain";
             this.btnFireAgain.Size = new System.Drawing.Size(209, 33);
             this.btnFireAgain.TabIndex = 13;
             this.btnFireAgain.Text = "Fire Again";
             this.btnFireAgain.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnFireAgain.UseVisualStyleBackColor = false;
+            this.btnFireAgain.Visible = false;
             this.btnFireAgain.Click += new System.EventHandler(this.BtnEnter_Click);
+            // 
+            // txtKlingons
+            // 
+            this.txtKlingons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.txtKlingons.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKlingons.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKlingons.Location = new System.Drawing.Point(320, 575);
+            this.txtKlingons.Name = "txtKlingons";
+            this.txtKlingons.Size = new System.Drawing.Size(209, 31);
+            this.txtKlingons.TabIndex = 14;
+            this.txtKlingons.Text = "Klingons";
+            // 
+            // txtEnterprise
+            // 
+            this.txtEnterprise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(102)))));
+            this.txtEnterprise.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnterprise.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnterprise.Location = new System.Drawing.Point(629, 574);
+            this.txtEnterprise.Name = "txtEnterprise";
+            this.txtEnterprise.Size = new System.Drawing.Size(209, 31);
+            this.txtEnterprise.TabIndex = 15;
+            this.txtEnterprise.Text = "Enterprise";
+            // 
+            // btnReplay
+            // 
+            this.btnReplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.btnReplay.FlatAppearance.BorderSize = 0;
+            this.btnReplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReplay.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReplay.Location = new System.Drawing.Point(629, 4);
+            this.btnReplay.Margin = new System.Windows.Forms.Padding(0);
+            this.btnReplay.Name = "btnReplay";
+            this.btnReplay.Size = new System.Drawing.Size(109, 33);
+            this.btnReplay.TabIndex = 16;
+            this.btnReplay.Text = "Replay";
+            this.btnReplay.UseVisualStyleBackColor = false;
+            this.btnReplay.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // Form1
             // 
@@ -275,6 +319,9 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.btnReplay);
+            this.Controls.Add(this.txtEnterprise);
+            this.Controls.Add(this.txtKlingons);
             this.Controls.Add(this.btnFireAgain);
             this.Controls.Add(this.picMain);
             this.Controls.Add(this.btnInfo);
@@ -315,6 +362,9 @@
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.PictureBox picMain;
         private System.Windows.Forms.Button btnFireAgain;
+        private System.Windows.Forms.TextBox txtKlingons;
+        private System.Windows.Forms.TextBox txtEnterprise;
+        private System.Windows.Forms.Button btnReplay;
     }
 }
 

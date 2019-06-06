@@ -50,11 +50,15 @@ namespace startrek
             InitializeComponent();
             // Fx.istxtinfo = txtInfo.Visible;
             txtInfo.Visible = false;
+
+
             // txtInfo.Visible = Fx.Istxtinfo;
             this.FormBorderStyle = FormBorderStyle.None; Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             // this set's the media player to not show controls, it has to be set here as a defult.
             axWindowsMediaPlayer1.uiMode = "none";
             //- Fx.SoundT7();
+
+            //  picMain = myLogic.PicMain;
         }
 
         private void BtnEnter_Click(object sender, EventArgs e)
@@ -70,6 +74,9 @@ namespace startrek
 
             Button fakeLcars = (Button)sender;
             ShieldsUp(fakeLcars.Name);
+            // Fx.IsbtnFireAgain;
+            btnFireAgain.Visible = Fx.IsbtnFireAgain;
+           // picMain = myLogic.PicMain;
             //  txtInfo.Visible = Fx.Istxtinfo;// // this links the variable "Istxtinfo" to the text box "txtInfo" and allows one to influence the other. 
 
 
@@ -102,6 +109,7 @@ namespace startrek
                 switch (shieldsDir)
                 {
                     case "btnBow":
+
                         myLogic.butnum = 1;
                         //  MessageBox.Show(myLogic.butnum.ToString());
                         myLogic.WinLose();
@@ -217,6 +225,14 @@ namespace startrek
                         //myLogic.Winshield();
                         // myLogic.ShieldsUp = "Shields";
                         break;
+
+                    case "btnReplay":
+
+                        // reset all methods and restart game
+
+                        break;
+
+
                 }
 
                 Text = myLogic.ShieldsUp;
@@ -224,6 +240,17 @@ namespace startrek
 
 
         }
+
+        //public void ImageCh()
+        //{
+        //    picMain.Image = Resource1.entex; // this changes the PicMain picture to BOPEX
+        //    picMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
+
+
+        //}
+        //picMain.Image = Resource1.BOPEX; // this changes the PicMain picture to BOPEX
+        //picMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
+
 
         public void BntAlert_Click(object sender, EventArgs e)
         {               //---------//

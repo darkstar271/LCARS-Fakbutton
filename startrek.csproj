@@ -188,5 +188,8 @@
   <ItemGroup>
     <None Include="Resources\101.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entex.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
