@@ -46,6 +46,7 @@
             this.txtKlingons = new System.Windows.Forms.TextBox();
             this.txtEnterprise = new System.Windows.Forms.TextBox();
             this.btnReplay = new System.Windows.Forms.Button();
+            this.btnDead = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
@@ -177,7 +178,7 @@
             this.bntAlert.BackgroundImage = global::startrek.Resource1.fed;
             this.bntAlert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bntAlert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntAlert.Location = new System.Drawing.Point(179, 54);
+            this.bntAlert.Location = new System.Drawing.Point(217, 40);
             this.bntAlert.Name = "bntAlert";
             this.bntAlert.Size = new System.Drawing.Size(741, 499);
             this.bntAlert.TabIndex = 7;
@@ -187,7 +188,7 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(21, 495);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(168, 547);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(70, 58);
@@ -202,9 +203,9 @@
             this.btnEngage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEngage.FlatAppearance.BorderSize = 0;
             this.btnEngage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEngage.Location = new System.Drawing.Point(179, 61);
+            this.btnEngage.Location = new System.Drawing.Point(180, 55);
             this.btnEngage.Name = "btnEngage";
-            this.btnEngage.Size = new System.Drawing.Size(719, 484);
+            this.btnEngage.Size = new System.Drawing.Size(788, 499);
             this.btnEngage.TabIndex = 9;
             this.btnEngage.UseVisualStyleBackColor = true;
             this.btnEngage.Visible = false;
@@ -215,10 +216,10 @@
             this.txtInfo.BackColor = System.Drawing.Color.Black;
             this.txtInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInfo.ForeColor = System.Drawing.Color.Gold;
-            this.txtInfo.Location = new System.Drawing.Point(34, 511);
+            this.txtInfo.Location = new System.Drawing.Point(128, 12);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(109, 90);
+            this.txtInfo.Size = new System.Drawing.Size(59, 53);
             this.txtInfo.TabIndex = 10;
             this.txtInfo.Text = resources.GetString("txtInfo.Text");
             this.txtInfo.Visible = false;
@@ -230,7 +231,7 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.Gold;
-            this.btnInfo.Location = new System.Drawing.Point(179, 54);
+            this.btnInfo.Location = new System.Drawing.Point(168, 55);
             this.btnInfo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
@@ -247,7 +248,7 @@
             // 
             this.picMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picMain.Image = global::startrek.Resource1.BOP;
-            this.picMain.Location = new System.Drawing.Point(179, 54);
+            this.picMain.Location = new System.Drawing.Point(180, 55);
             this.picMain.Name = "picMain";
             this.picMain.Size = new System.Drawing.Size(788, 499);
             this.picMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -257,20 +258,19 @@
             // 
             // btnFireAgain
             // 
-            this.btnFireAgain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnFireAgain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.btnFireAgain.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.btnFireAgain.FlatAppearance.BorderSize = 0;
             this.btnFireAgain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.btnFireAgain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.btnFireAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFireAgain.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFireAgain.Location = new System.Drawing.Point(354, 4);
+            this.btnFireAgain.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFireAgain.Location = new System.Drawing.Point(21, 40);
             this.btnFireAgain.Margin = new System.Windows.Forms.Padding(0);
             this.btnFireAgain.Name = "btnFireAgain";
-            this.btnFireAgain.Size = new System.Drawing.Size(209, 33);
+            this.btnFireAgain.Size = new System.Drawing.Size(123, 44);
             this.btnFireAgain.TabIndex = 13;
             this.btnFireAgain.Text = "Fire Again";
-            this.btnFireAgain.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnFireAgain.UseVisualStyleBackColor = false;
             this.btnFireAgain.Visible = false;
             this.btnFireAgain.Click += new System.EventHandler(this.BtnEnter_Click);
@@ -299,18 +299,30 @@
             // 
             // btnReplay
             // 
-            this.btnReplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.btnReplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.btnReplay.FlatAppearance.BorderSize = 0;
             this.btnReplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReplay.Font = new System.Drawing.Font("LCARS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReplay.Location = new System.Drawing.Point(629, 4);
+            this.btnReplay.Font = new System.Drawing.Font("LCARS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReplay.Location = new System.Drawing.Point(29, 493);
             this.btnReplay.Margin = new System.Windows.Forms.Padding(0);
             this.btnReplay.Name = "btnReplay";
-            this.btnReplay.Size = new System.Drawing.Size(109, 33);
+            this.btnReplay.Size = new System.Drawing.Size(109, 73);
             this.btnReplay.TabIndex = 16;
             this.btnReplay.Text = "Replay";
             this.btnReplay.UseVisualStyleBackColor = false;
             this.btnReplay.Click += new System.EventHandler(this.BtnEnter_Click);
+            // 
+            // btnDead
+            // 
+            this.btnDead.BackgroundImage = global::startrek.Resource1.BOPEX;
+            this.btnDead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDead.Location = new System.Drawing.Point(180, 55);
+            this.btnDead.Name = "btnDead";
+            this.btnDead.Size = new System.Drawing.Size(788, 499);
+            this.btnDead.TabIndex = 17;
+            this.btnDead.UseVisualStyleBackColor = true;
+            this.btnDead.Visible = false;
+            this.btnDead.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // Form1
             // 
@@ -319,6 +331,7 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.btnDead);
             this.Controls.Add(this.btnReplay);
             this.Controls.Add(this.txtEnterprise);
             this.Controls.Add(this.txtKlingons);
@@ -365,6 +378,7 @@
         private System.Windows.Forms.TextBox txtKlingons;
         private System.Windows.Forms.TextBox txtEnterprise;
         private System.Windows.Forms.Button btnReplay;
+        private System.Windows.Forms.Button btnDead;
     }
 }
 

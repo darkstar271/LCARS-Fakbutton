@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using System.Windows.Forms;
-
+using System.Timers;
 namespace startrek
 {
     public class Logic
@@ -15,7 +15,7 @@ namespace startrek
      //  public bool istxtinfo
 
         // Form1 myForm1 = new Form1();
-        public PictureBox PicMain { get; set; }
+        // public PictureBox PicMain { get; set; }
         public int butnum { get; set; }
         public string ShieldsUp { get; set; }
         public int randomTwarp { get; set; }
@@ -37,13 +37,13 @@ namespace startrek
 
         }
 
-        public void ImageCh()
-        {
-            PicMain.Image = Resource1.entex; // this changes the PicMain picture to BOPEX
-            PicMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
+        //public void ImageCh()
+        //{
+        //    PicMain.Image = Resource1.entex; // this changes the PicMain picture to BOPEX
+        //    PicMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
 
 
-        }
+        //}
 
 
 
@@ -89,8 +89,11 @@ namespace startrek
             // you lose method here
             {
                 Fx.SoundT9();
-                ImageCh();
-                Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
+                // ImageCh();
+                Fx.IspicMain = false;
+                Fx.IsbtnDead = true;
+
+                // Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
 
 
                 return;

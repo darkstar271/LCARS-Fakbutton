@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Media;
 using System.Threading;
+using System.Timers;
 using startrek.Properties;
 // link the unittestST to the project
 // LCARS font added to winform, this is the font used on Startrek movies and tv shows, it's the computer interface (Library Computer Access/Retrieval System)
@@ -55,7 +56,7 @@ namespace startrek
             // txtInfo.Visible = Fx.Istxtinfo;
             this.FormBorderStyle = FormBorderStyle.None; Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             // this set's the media player to not show controls, it has to be set here as a defult.
-            axWindowsMediaPlayer1.uiMode = "none";
+            // axWindowsMediaPlayer1.uiMode = "none";
             //- Fx.SoundT7();
 
             //  picMain = myLogic.PicMain;
@@ -76,7 +77,10 @@ namespace startrek
             ShieldsUp(fakeLcars.Name);
             // Fx.IsbtnFireAgain;
             btnFireAgain.Visible = Fx.IsbtnFireAgain;
-           // picMain = myLogic.PicMain;
+            btnDead.Visible = Fx.IsbtnDead;
+            // picMain.Visible = Fx.IspicMain;
+
+            // picMain = myLogic.PicMain;
             //  txtInfo.Visible = Fx.Istxtinfo;// // this links the variable "Istxtinfo" to the text box "txtInfo" and allows one to influence the other. 
 
 
@@ -232,6 +236,10 @@ namespace startrek
 
                         break;
 
+                    case "btnDead":
+
+
+                        break;
 
                 }
 

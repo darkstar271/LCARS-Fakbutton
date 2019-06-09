@@ -15,7 +15,8 @@ namespace startrek
         public static bool Istxtinfo { get; set; } = false; // this is the variable that allows 2 way communication from FX Class and Form1 .
         public static bool ShieldAct { get; set; } = false; // This is part of the Boolen for checking if the ShieldUp has been used
         public static bool IsbtnFireAgain { get; set; } = false; // this is the variable that controls the btnFireAgain, set's weather it is visible or not
-
+        public static bool IsbtnDead { get; set; } = false; // this is the variable that controls the btnDead, set's weather it is visible or not
+        public static bool IspicMain { get; set; } = true;// this is the variable that controls the picMain, set's weather it is visible or not
 
         public static void SoundT1()
         {
