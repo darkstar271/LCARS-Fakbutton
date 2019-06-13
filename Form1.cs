@@ -27,7 +27,8 @@ namespace startrek
     public partial class Form1 : Form
 
     {
-
+        #region RoundRect method 
+        // RoundRect method this makes the win-form have round edges
         Logic myLogic = new Logic();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -42,6 +43,10 @@ namespace startrek
 
 
         );
+
+        #endregion
+
+        #region constructor & win-form roundEdge form
         public Form1()
         {
 
@@ -61,7 +66,9 @@ namespace startrek
 
             //  picMain = myLogic.PicMain;
         }
+        #endregion
 
+        #region fake button method
         private void BtnEnter_Click(object sender, EventArgs e)
         {
 
@@ -91,7 +98,7 @@ namespace startrek
             //}
             //// Fx.SoundT1();
         }
-
+        #endregion
 
 
 
@@ -105,7 +112,7 @@ namespace startrek
         // int tag = (sender as button).Tag
         // int tag = (Button)sender.Tag;
         // public new object Tag { get; set; }
-
+        #region Button master switch
         public void ShieldsUp(string shieldsDir)
         {
 
@@ -248,7 +255,7 @@ namespace startrek
 
 
         }
-
+        #endregion
         //public void ImageCh()
         //{
         //    picMain.Image = Resource1.entex; // this changes the PicMain picture to BOPEX
@@ -324,5 +331,41 @@ namespace startrek
         {
 
         }
+
+
+        #region Timetest
+
+        //
+
+        //    //Set the timer tick event, this must be put in the constructor
+        //    myTimer.Tick += new System.EventHandler(myTimer_Tick);
+
+        //private void Button1_Click_1(object sender, EventArgs e)
+        //{
+        //    //Set the timer tick interval time in milliseconds
+        //    myTimer.Interval = 1000;
+        //    //Start timer
+        //    myTimer.Start();
+        //}
+        ////Timer tick event handler
+        //private void myTimer_Tick(object sender, System.EventArgs e)
+        //{
+        //    this.label1.Text = "Successful";
+        //    //Stop the timer - if required
+        //    myTimer.Stop();
+        //}
+
+
+
+
+
+
+
+
+        #endregion
+
+
+
+
     }
 }

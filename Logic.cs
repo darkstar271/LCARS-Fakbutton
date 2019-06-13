@@ -8,14 +8,53 @@ using System.Windows.Forms;
 using System.Timers;
 namespace startrek
 {
+
+
+
+
     public class Logic
 
 
     {// make 10 Properties to store variables
      //  public bool istxtinfo
-
+        System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
         // Form1 myForm1 = new Form1();
         // public PictureBox PicMain { get; set; }
+        public Logic()
+
+        {
+            myTimer.Tick += new System.EventHandler(myTimer_Tick);
+
+        }
+
+        private void Time()
+        {
+            //Set the timer tick interval time in milliseconds
+            myTimer.Interval = 3000;
+            //Start timer
+            myTimer.Start();
+            Fx.IsbtnFireAgain = true;
+            // Fx.IsbtnDead = true;
+
+
+        }
+        //Timer tick event handler
+        private void myTimer_Tick(object sender, System.EventArgs e)
+        {
+            // this.label1.Text = "Successful";
+            // pictureBox5.Visible = false;
+            //Stop the timer - if required
+            // Fx.IsbtnDead = false;
+            Fx.IsbtnFireAgain = false;
+
+            myTimer.Stop();
+
+        }
+
+
+
+
+
         public int butnum { get; set; }
         public string ShieldsUp { get; set; }
         public int randomTwarp { get; set; }
@@ -29,6 +68,7 @@ namespace startrek
             return fire - 1;
         }
         // keep working from here
+        // Random number generator
         public int Sdeflect()
         {
             Random random = new Random();
@@ -70,6 +110,8 @@ namespace startrek
             }
 
         }
+        #region WinLose
+        // This is the Winlose method it is mostly three "IF" statements,this is the heart of the program.
         public void WinLose()
         {
 
@@ -101,7 +143,11 @@ namespace startrek
 
             if (butnum != Rndnum)
             {
-                Fx.IsbtnFireAgain = true;
+                // Fx.IsbtnFireAgain = true;
+                Time();
+
+
+
                 // make refire method
 
 
@@ -131,7 +177,7 @@ namespace startrek
 
 
         }
-
+        #endregion
 
         //public int Test()
         //{
