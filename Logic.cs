@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using System.Windows.Forms;
-using System.Timers;
+//using System.Timers;
 namespace startrek
 {
 
@@ -29,12 +29,14 @@ namespace startrek
 
         private void Time()
         {
+
             //Set the timer tick interval time in milliseconds
             myTimer.Interval = 3000;
             //Start timer
             myTimer.Start();
             Fx.IsbtnFireAgain = true;
             // Fx.IsbtnDead = true;
+
 
 
         }
@@ -145,6 +147,7 @@ namespace startrek
             {
                 // Fx.IsbtnFireAgain = true;
                 Time();
+
 
 
 

@@ -28,6 +28,7 @@ namespace startrek
 
     {
         #region RoundRect method 
+        System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
         // RoundRect method this makes the win-form have round edges
         Logic myLogic = new Logic();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -266,7 +267,7 @@ namespace startrek
         //picMain.Image = Resource1.BOPEX; // this changes the PicMain picture to BOPEX
         //picMain.SizeMode = PictureBoxSizeMode.StretchImage;// this sets the size to stretchImage
 
-
+        #region BntAlert_Click
         public void BntAlert_Click(object sender, EventArgs e)
         {               //---------//
                         // Keep this code
@@ -304,7 +305,7 @@ namespace startrek
             //BtnVisBol();
             //Fx.SoundT6();
         }
-
+        #endregion
         private void BtnVisBol()
         {
             bntAlert.Visible = false;
