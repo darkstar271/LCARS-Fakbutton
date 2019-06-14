@@ -268,6 +268,16 @@ namespace startrek {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Star_Trek_Generations_1994_1080p_BluRay_x264_AAC_ETRG_00 {
+            get {
+                object obj = ResourceManager.GetObject("Star_Trek_Generations_1994_1080p_BluRay_x264_AAC_ETRG_00", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Star_Trek_Red_Alert_Screen {
@@ -302,6 +312,25 @@ namespace startrek {
             get {
                 object obj = ResourceManager.GetObject("USS_Enterprise_D_2C_These_Are_the_Voyages", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warp {
+            get {
+                object obj = ResourceManager.GetObject("warp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream warp2 {
+            get {
+                return ResourceManager.GetStream("warp2", resourceCulture);
             }
         }
     }

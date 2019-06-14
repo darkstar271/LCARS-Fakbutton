@@ -17,6 +17,7 @@ namespace startrek
         public static bool IsbtnFireAgain { get; set; } // this is the variable that controls the btnFireAgain, set's weather it is visible or not
         public static bool IsbtnDead { get; set; } = false; // this is the variable that controls the btnDead, set's weather it is visible or not
         public static bool IspicMain { get; set; } = true;// this is the variable that controls the picMain, set's weather it is visible or not
+        public static bool IsbtnWin { get; set; }
 
         public static void SoundT1()
         {
@@ -88,18 +89,22 @@ namespace startrek
         public static void SoundT10()
         {
             SoundPlayer sn2Player = new SoundPlayer(Resource1.KlingonAlert);
-            sn2Player.PlayLooping();
+            sn2Player.Play();
 
 
         }
         public static void SoundT11()
         {
             SoundPlayer sn2Player = new SoundPlayer(Resource1._101);
-            sn2Player.PlayLooping();
+            sn2Player.Play();
 
 
         }
 
-
+        public static void Sound12()
+        {
+            SoundPlayer sn2Player = new SoundPlayer(Resource1.warp2);
+            sn2Player.Play();
+        }
     }
 }

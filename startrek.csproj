@@ -191,5 +191,14 @@
   <ItemGroup>
     <None Include="Resources\entex.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star.Trek.Generations.1994.1080p.BluRay.x264.AAC-ETRG.00.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warp2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warp.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

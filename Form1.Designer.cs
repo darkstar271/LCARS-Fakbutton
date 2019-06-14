@@ -47,6 +47,7 @@
             this.txtEnterprise = new System.Windows.Forms.TextBox();
             this.btnReplay = new System.Windows.Forms.Button();
             this.btnDead = new System.Windows.Forms.Button();
+            this.btnWin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
@@ -285,6 +286,7 @@
             this.txtKlingons.Size = new System.Drawing.Size(209, 31);
             this.txtKlingons.TabIndex = 14;
             this.txtKlingons.Text = "Klingons";
+            this.txtKlingons.TextChanged += new System.EventHandler(this.TxtKlingons_TextChanged);
             // 
             // txtEnterprise
             // 
@@ -296,6 +298,7 @@
             this.txtEnterprise.Size = new System.Drawing.Size(209, 31);
             this.txtEnterprise.TabIndex = 15;
             this.txtEnterprise.Text = "Enterprise";
+            this.txtEnterprise.TextChanged += new System.EventHandler(this.TxtEnterprise_TextChanged);
             // 
             // btnReplay
             // 
@@ -324,6 +327,17 @@
             this.btnDead.Visible = false;
             this.btnDead.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
+            // btnWin
+            // 
+            this.btnWin.BackgroundImage = global::startrek.Resource1.warp;
+            this.btnWin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnWin.Location = new System.Drawing.Point(180, 55);
+            this.btnWin.Name = "btnWin";
+            this.btnWin.Size = new System.Drawing.Size(788, 499);
+            this.btnWin.TabIndex = 18;
+            this.btnWin.UseVisualStyleBackColor = true;
+            this.btnWin.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,6 +345,7 @@
             this.BackgroundImage = global::startrek.Resource1.dsBuffer_bmp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.btnWin);
             this.Controls.Add(this.btnDead);
             this.Controls.Add(this.btnReplay);
             this.Controls.Add(this.txtEnterprise);
@@ -379,6 +394,7 @@
         private System.Windows.Forms.TextBox txtEnterprise;
         private System.Windows.Forms.Button btnReplay;
         private System.Windows.Forms.Button btnDead;
+        private System.Windows.Forms.Button btnWin;
     }
 }
 

@@ -64,11 +64,20 @@ namespace startrek
         //public int btnTag { get; set; }
         public int fire { get; set; } = 6;
         // public int num = 0; // sets a variable to be used in the random number generator
-        public int Sboost { get; set; } = 2;
+
+        // the win score of the Enterprise and Klingons
+        public int KlingonScore { get; set; } = 5;
+        public int EnterpriseScore { get; set; } = 10;
+
         public int fireCountdown()
         {
             return fire - 1;
         }
+        //// shield countdown method
+        //public int ShieldCountDown()
+        //{
+        //    return Fx.Sboost - 1;
+        //}
         // keep working from here
         // Random number generator
         public int Sdeflect()
@@ -121,7 +130,9 @@ namespace startrek
             {
                 //You have won
                 // winning method  here
-                Fx.SoundT11();
+                Fx.IspicMain = false;
+                Fx.IsbtnWin = true;
+                Fx.Sound12();
                 return;
 
 
@@ -146,7 +157,7 @@ namespace startrek
             if (butnum != Rndnum)
             {
                 // Fx.IsbtnFireAgain = true;
-                Time();
+                //Time();
 
 
 
@@ -209,20 +220,20 @@ namespace startrek
 
         //}
 
-        // Sboost
-        public void SboostReset()
-        { Sboost = 2; }
+        //// Sboost
+        //public void SboostReset()
+        //{ Sboost = 2; }
 
-        public void Sdeflectreset()
-        { Rndnum = 0; }
+        //public void Sdeflectreset()
+        //{ Rndnum = 0; }
 
 
 
-        public void Allrest()
-        {
-            SboostReset();
-            Sdeflectreset();
-        }
+        //public void Allrest()
+        //{
+        //    SboostReset();
+        //    Sdeflectreset();
+        //}
 
 
 

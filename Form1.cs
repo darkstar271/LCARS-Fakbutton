@@ -28,7 +28,7 @@ namespace startrek
 
     {
         #region RoundRect method 
-        System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+        // System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
         // RoundRect method this makes the win-form have round edges
         Logic myLogic = new Logic();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -57,8 +57,9 @@ namespace startrek
             InitializeComponent();
             // Fx.istxtinfo = txtInfo.Visible;
             txtInfo.Visible = false;
-
-
+            txtEnterprise.Text += "  " + myLogic.EnterpriseScore.ToString();
+            txtKlingons.Text += "  " + myLogic.KlingonScore.ToString();
+            // btnShields.Text += "  " + Fx.Sboost.ToString();
             // txtInfo.Visible = Fx.Istxtinfo;
             this.FormBorderStyle = FormBorderStyle.None; Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             // this set's the media player to not show controls, it has to be set here as a defult.
@@ -86,6 +87,7 @@ namespace startrek
             // Fx.IsbtnFireAgain;
             btnFireAgain.Visible = Fx.IsbtnFireAgain;
             btnDead.Visible = Fx.IsbtnDead;
+            btnWin.Visible = Fx.IsbtnWin;
             // picMain.Visible = Fx.IspicMain;
 
             // picMain = myLogic.PicMain;
@@ -131,6 +133,7 @@ namespace startrek
                         // this just tests the random gen in Logic.cs and prints the value to screen
 
                         myLogic.ShieldsUp = "Bow";
+                        btnBow.Enabled = false;
                         break;
                     case "btnStern":
                         myLogic.butnum = 2;
@@ -139,6 +142,7 @@ namespace startrek
                         //txtInfo.Visible = Fx.Istxtinfo;
                         //  Fx.SoundT1();
                         myLogic.ShieldsUp = "Stern";
+                        btnStern.Enabled = false;
                         break;
                     case "btnPort":
                         myLogic.butnum = 3;
@@ -147,6 +151,7 @@ namespace startrek
                         //txtInfo.Visible = Fx.Istxtinfo;
                         // Fx.SoundT3();
                         myLogic.ShieldsUp = "Port";
+                        btnPort.Enabled = false;
                         break;
                     case "btnStarboard":
                         myLogic.butnum = 4;
@@ -155,6 +160,7 @@ namespace startrek
                         // txtInfo.Visible = Fx.Istxtinfo;
                         // Fx.SoundT4();
                         myLogic.ShieldsUp = "Starboard";
+                        btnStarboard.Enabled = false;
                         break;
                     case "btnTop":
                         myLogic.butnum = 5;
@@ -163,6 +169,7 @@ namespace startrek
                         //txtInfo.Visible = Fx.Istxtinfo;
                         // Fx.SoundT5();
                         //  myLogic.ShieldsUp = "Top";
+                        btnTop.Enabled = false;
                         break;
                     case "btnBottom":
                         myLogic.butnum = 6;
@@ -171,11 +178,31 @@ namespace startrek
                         //txtInfo.Visible = Fx.Istxtinfo;
                         // Fx.SoundT6();
                         //  myLogic.ShieldsUp = "Bottom";
+                        btnBottom.Enabled = false;
                         break;
                     case "btnShields":
 
-                        Fx.ShieldAct = true;
-                        myLogic.Winshield();
+                        // Fx.ShieldAct = true;
+                        // int Shield = ShieldCountDown();
+
+                        Sboost -= 1;
+
+                        //// shield countdown method
+                        //public int ShieldCountDown()
+                        //{
+                        //    return Sboost - 1;
+                        //}
+
+
+
+
+
+                        MessageBox.Show(Sboost.ToString());
+
+                        //  btnShields.Text = "  " + shoot.ToString();
+                        btnShields.Text = "ShieldMax  " + Sboost.ToString();
+                        //  myLogic.Winshield();
+
                         // myLogic.ShieldsUp = "Shields";
                         break;
                     //axWindowsMediaPlayer1.URL = @"G:\Visual Studio 2019 Files\startrek\Resources\PreyEx2.avi";
@@ -334,6 +361,9 @@ namespace startrek
         }
 
 
+
+
+
         #region Timetest
 
         //
@@ -365,7 +395,25 @@ namespace startrek
 
         #endregion
 
+        private void TxtKlingons_TextChanged(object sender, EventArgs e)
+        {
 
+            //  txtKlingons.Text += "  " + myLogic.KlingonScore.ToString();
+        }
+
+        private void TxtEnterprise_TextChanged(object sender, EventArgs e)
+        {
+            // txtEnterprise.Text += "  " + myLogic.EnterpriseScore.ToString();
+        }
+
+        public int Sboost { get; set; } = 10;
+
+
+        // shield countdown method
+        public int ShieldCountDown()
+        {
+            return Sboost - 1;
+        }
 
 
     }
