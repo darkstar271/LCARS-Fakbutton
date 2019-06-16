@@ -35,6 +35,7 @@ namespace startrek
             //Start timer
             myTimer.Start();
             Fx.IsbtnFireAgain = true;
+
             // Fx.IsbtnDead = true;
 
 
@@ -66,9 +67,21 @@ namespace startrek
         // public int num = 0; // sets a variable to be used in the random number generator
 
         // the win score of the Enterprise and Klingons
-        public int KlingonScore { get; set; } = 5;
-        public int EnterpriseScore { get; set; } = 10;
+        public int KlingonScore { get; set; }
+        public int EnterpriseScore { get; set; }
+        // This increases the Enterprise Score
+        public int EnterpriseUp()
+        { return EnterpriseScore += 1; }
+        // This increases the Klingon Score
+        public int KlingonUp()
+        { return KlingonScore += 1; }
 
+        public int Sboost { get; set; } = 2;
+        // shield countdown method
+        public int ShieldCountDown()
+        {
+            return Sboost -= 1;
+        }
         public int fireCountdown()
         {
             return fire - 1;
@@ -132,9 +145,12 @@ namespace startrek
                 // winning method  here
                 Fx.IspicMain = false;
                 Fx.IsbtnWin = true;
+                EnterpriseUp();
+                Fx.IstxtKlingons = true;
+                Fx.IstxtEnterprise = true;
+
                 Fx.Sound12();
                 return;
-
 
             }
 
@@ -147,7 +163,9 @@ namespace startrek
                 // ImageCh();
                 Fx.IspicMain = false;
                 Fx.IsbtnDead = true;
-
+                KlingonUp();
+                Fx.IstxtKlingons = true;
+                Fx.IstxtEnterprise = true;
                 // Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
 
 
@@ -156,40 +174,11 @@ namespace startrek
 
             if (butnum != Rndnum)
             {
+                Fx.IsbtnFireAgain = true;
                 // Fx.IsbtnFireAgain = true;
                 //Time();
 
-
-
-
-                // make refire method
-
-
             }
-            // method here keep firing
-
-            //message you missed fire again
-
-
-
-            //// lose if statement
-            //if (Sboost == 0 && fire > 0)
-
-            //{
-            //    Fx.SoundT9();
-
-            //    // do stuff
-
-
-            //}
-
-            //if // use shield is True and Fire/Butnum == num you Win
-            //{
-            //    Fx.SoundT7();
-            //    //return;
-            //}
-
-
         }
         #endregion
 

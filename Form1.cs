@@ -28,7 +28,7 @@ namespace startrek
 
     {
         #region RoundRect method 
-        // System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+
         // RoundRect method this makes the win-form have round edges
         Logic myLogic = new Logic();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -55,6 +55,13 @@ namespace startrek
 
 
             InitializeComponent();
+
+            btnFireAgain.Visible = false;
+            txtEnterprise.Visible = false;
+            txtKlingons.Visible = false;
+            btnReplay.Visible = false;
+
+
             // Fx.istxtinfo = txtInfo.Visible;
             txtInfo.Visible = false;
             txtEnterprise.Text += "  " + myLogic.EnterpriseScore.ToString();
@@ -62,7 +69,7 @@ namespace startrek
             // btnShields.Text += "  " + Fx.Sboost.ToString();
             // txtInfo.Visible = Fx.Istxtinfo;
             this.FormBorderStyle = FormBorderStyle.None; Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            // this set's the media player to not show controls, it has to be set here as a defult.
+            // this set's the media player to not show controls, it has to be set here as a default.
             // axWindowsMediaPlayer1.uiMode = "none";
             //- Fx.SoundT7();
 
@@ -88,6 +95,8 @@ namespace startrek
             btnFireAgain.Visible = Fx.IsbtnFireAgain;
             btnDead.Visible = Fx.IsbtnDead;
             btnWin.Visible = Fx.IsbtnWin;
+            txtEnterprise.Visible = Fx.IstxtEnterprise;
+            txtKlingons.Visible = Fx.IstxtKlingons;
             // picMain.Visible = Fx.IspicMain;
 
             // picMain = myLogic.PicMain;
@@ -115,6 +124,20 @@ namespace startrek
         // int tag = (sender as button).Tag
         // int tag = (Button)sender.Tag;
         // public new object Tag { get; set; }
+        public void ResetAll()
+        {
+            // resets all locked button On
+            btnPort.Enabled = true;
+            btnBottom.Enabled = true;
+            btnBow.Enabled = true;
+            btnStarboard.Enabled = true;
+            btnTop.Enabled = true;
+            btnStern.Enabled = true;
+            txtKlingons.Visible = false;
+            txtEnterprise.Visible = false;
+            btnReplay.Visible = false;
+
+        }
         #region Button master switch
         public void ShieldsUp(string shieldsDir)
         {
@@ -182,27 +205,21 @@ namespace startrek
                         break;
                     case "btnShields":
 
-                        // Fx.ShieldAct = true;
-                        // int Shield = ShieldCountDown();
+                        Fx.ShieldAct = true;
 
-                        Sboost -= 1;
+                        int Shield = myLogic.ShieldCountDown();
 
-                        //// shield countdown method
-                        //public int ShieldCountDown()
-                        //{
-                        //    return Sboost - 1;
-                        //}
+                        // myLogic.ShieldCountDown();
 
 
 
 
-
-                        MessageBox.Show(Sboost.ToString());
-
+                        // MessageBox.Show(Sboost.ToString());
                         //  btnShields.Text = "  " + shoot.ToString();
-                        btnShields.Text = "ShieldMax  " + Sboost.ToString();
-                        //  myLogic.Winshield();
 
+                        //  btnShields.Text = "ShieldMax  " + Sboost.ToString();
+                        btnShields.Text = "ShieldMax  " + Shield.ToString();
+                        //  myLogic.Winshield();
                         // myLogic.ShieldsUp = "Shields";
                         break;
                     //axWindowsMediaPlayer1.URL = @"G:\Visual Studio 2019 Files\startrek\Resources\PreyEx2.avi";
@@ -268,6 +285,7 @@ namespace startrek
                     case "btnReplay":
 
                         // reset all methods and restart game
+                        ResetAll();
 
                         break;
 
@@ -354,11 +372,6 @@ namespace startrek
         //}
 
 
-        private void cat()
-
-        {
-
-        }
 
 
 
@@ -406,14 +419,14 @@ namespace startrek
             // txtEnterprise.Text += "  " + myLogic.EnterpriseScore.ToString();
         }
 
-        public int Sboost { get; set; } = 10;
+        //public int Sboost { get; set; } = 2;
 
 
-        // shield countdown method
-        public int ShieldCountDown()
-        {
-            return Sboost - 1;
-        }
+        //// shield countdown method
+        //public int ShieldCountDown()
+        //{
+        //    return Sboost -= 1;
+        //}
 
 
     }
