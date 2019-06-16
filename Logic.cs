@@ -76,7 +76,7 @@ namespace startrek
         public int KlingonUp()
         { return KlingonScore += 1; }
 
-        public int Sboost { get; set; } = 2;
+        public int Sboost { get; set; } = 3;
         // shield countdown method
         public int ShieldCountDown()
         {
@@ -150,12 +150,13 @@ namespace startrek
                 Fx.IstxtEnterprise = true;
 
                 Fx.Sound12();
+                Fx.IsbtnReplay = true;
                 return;
 
             }
 
 
-            if (butnum == Rndnum)
+            if (butnum == Rndnum || Sboost == 0)
 
             // you lose method here
             {
@@ -167,7 +168,7 @@ namespace startrek
                 Fx.IstxtKlingons = true;
                 Fx.IstxtEnterprise = true;
                 // Fx.Istxtinfo = true; // this is the Boolean that controls a txtbox on the Form.
-
+                Fx.IsbtnReplay = true;
 
                 return;
             }
@@ -179,6 +180,7 @@ namespace startrek
                 //Time();
 
             }
+
         }
         #endregion
 

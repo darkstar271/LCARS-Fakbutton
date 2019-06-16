@@ -20,6 +20,7 @@ namespace startrek
         public static bool IsbtnWin { get; set; }
         public static bool IstxtKlingons { get; set; }
         public static bool IstxtEnterprise { get; set; }
+        public static bool IsbtnReplay { get; set; }
         public static void SoundT1()
         {
             SoundPlayer snPlayer = new SoundPlayer(Resource1._002

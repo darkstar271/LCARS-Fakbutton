@@ -57,8 +57,8 @@ namespace startrek
             InitializeComponent();
 
             btnFireAgain.Visible = false;
-            txtEnterprise.Visible = false;
-            txtKlingons.Visible = false;
+            // txtEnterprise.Visible = false;
+            // txtKlingons.Visible = false;
             btnReplay.Visible = false;
 
 
@@ -66,6 +66,7 @@ namespace startrek
             txtInfo.Visible = false;
             txtEnterprise.Text += "  " + myLogic.EnterpriseScore.ToString();
             txtKlingons.Text += "  " + myLogic.KlingonScore.ToString();
+
             // btnShields.Text += "  " + Fx.Sboost.ToString();
             // txtInfo.Visible = Fx.Istxtinfo;
             this.FormBorderStyle = FormBorderStyle.None; Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
@@ -97,6 +98,7 @@ namespace startrek
             btnWin.Visible = Fx.IsbtnWin;
             txtEnterprise.Visible = Fx.IstxtEnterprise;
             txtKlingons.Visible = Fx.IstxtKlingons;
+            btnReplay.Visible = Fx.IsbtnReplay;
             // picMain.Visible = Fx.IspicMain;
 
             // picMain = myLogic.PicMain;
@@ -175,6 +177,7 @@ namespace startrek
                         // Fx.SoundT3();
                         myLogic.ShieldsUp = "Port";
                         btnPort.Enabled = false;
+
                         break;
                     case "btnStarboard":
                         myLogic.butnum = 4;
@@ -296,7 +299,7 @@ namespace startrek
 
                 }
 
-                Text = myLogic.ShieldsUp;
+                // Text = myLogic.ShieldsUp;
             }
 
 
